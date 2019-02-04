@@ -5,14 +5,14 @@
 int main()
 {
 	int currentNumber = 0;
-	int maxNumber = 10000000;
-	float solveNumber;
+	int maxNumber = 100000000;
+	double solveNumber;
 	float intcheck;
 
 	for (int i = 2; i < maxNumber; i++) {				//Zahl zu prüfen
 
 		for (int j = 2; j < i; j++) {					//Prüfzahlen
-			solveNumber = (float)i / j;					//Teile die Zahl durch die Prüfzahl
+			solveNumber = (double)i / j;				//Teile die Zahl durch die Prüfzahl
 			intcheck = solveNumber - (int)solveNumber;	//Subtrahiere Ganzzahl von Gleitkommazahl
 			if (intcheck == 0) {						//Wenn teilbar: intcheck == 0 -> Ist keine Primzahl
 				break;									//breche weitere Berechnungen für diese Zahl ab
