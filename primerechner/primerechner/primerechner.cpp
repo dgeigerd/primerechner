@@ -18,7 +18,7 @@ int main()
 				break;									//breche weitere Berechnungen für diese Zahl ab
 			}
 			else if (j == i - 1) {						//wenn durch keine Zahl teilbar -> Ist eine Primzahl
-				printf("Primzahl: %d\n", i);						//Gebe Zahl mit newline aus
+				printf("Primzahl: %d\n", i);			//Gebe Zahl mit newline aus
 			}
 		}
 	}
